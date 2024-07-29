@@ -8,9 +8,9 @@ terraform {
   }
 }
 provider "aws"  {
-region = var.AWS_REGION
-access_key = var.AWS_ACCESS_KEY_ID
-secret_key = var.AWS_SECRET_KEY
+region = var.region
+access_key = var.access_key
+secret_key = var.secret_key
 }
 resource "aws_dynamodb_table" "resumeTable" {
   name            = "atieno_resume"
