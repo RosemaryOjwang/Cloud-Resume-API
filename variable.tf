@@ -1,11 +1,11 @@
-variable "AWS_ACCESS_KEY_ID"   {
+variable "access_key"   {
     description = "AWS user access key"
 }
 
-variable "AWS_SECRET_KEY"   {
+variable "secret_key"   {
     description = "AWS user access secret key"
 }
 
-variable "AWS_REGION" {
+variable "region" {
     description = "AWS resouces region"
 }
