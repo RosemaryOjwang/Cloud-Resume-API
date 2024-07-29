@@ -1,0 +1,215 @@
+{
+  "Item": {
+    "id": {"S": "1"},
+    "Basics": {
+      "M": {
+        "name": {"S": "Rosemary Ojwang"},
+        "label": {"S": "Cloud Practitioner"},
+        "image": {"S": ""},
+        "email": {"S": "rosemaryojwang26@gmail.com"},
+        "phone": {"S": "+27 700305569"},
+        "objective statement": {"S": "Dependable and self-motivated professional with over five years experience in high-pressure office environment offering banking services. Seeking to start a career in cloud computing to work alongside a diverse team to design and implement comprehensive cloud solutions that align with business needs, considering scalability, security and performance. Analytical thinker and problem solver with proven ability to evaluate challenges and make decisions."},
+        "location": {
+          "M": {
+            "address": {"S": "11 Eldama Ravine"},
+            "postalCode": {"S": "20103"},
+            "city": {"S": "Baringo"},
+            "countryCode": {"S": "KE"},
+            "region": {"S": "Rift Valley"}
+          }
+        }
+      }
+    },        
+    "Skills & Competencies": {
+      "L": [
+        {
+          "M": {
+            "name": {"S": "Knowledge of programming languages (Python, JavaScript, CSS, Bash, SQL)"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Networking"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Security foundations"}            
+          }
+        },        
+        {
+          "M": {
+            "name": {"S": "Data Analysis"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Data storage fundamentals"}
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Cloud-specific patterns and technologies"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "AWS service selection"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Communication"}                   
+          }
+        }
+      ]
+    },
+    "Professional Training & Certification": {
+      "L": [
+        {
+          "M": {
+            "name": {"S": "Google Data Analytics Professional Certificate"},
+            "date": {"S": "2024-11-30"},
+            "issuer": {"S": "Google"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "IBM IT Project Manager Professional Certificate"},
+            "date": {"S": "2024-11-30"},
+            "issuer": {"S": "IBM"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "AWS Certified Cloud Practitioner"},
+            "date": {"S": "2024-04-24"},
+            "issuer": {"S": "AWS"},
+            "url": {"S": "https://www.credly.com/badges/85038f4d-dccb-4f0d-9d6b-8781e335bb3e/linked_in_profile"}
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Software Developer"},
+            "date": {"S": "2023-12-01"},
+            "issuer": {"S": "Power Learn Project"}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Digital Customer Service Certificate"},
+            "date": {"S": "2021-10-15"},
+            "issuer": {"S": "Generation Programme Kenya"}            
+          }
+        }
+      ]
+    },
+    "Education": {
+      "L": [
+        {
+          "M": {
+            "institution": {"S": "Maseno University"},
+            "url": {"S": "https://www.maseno.ac.ke/"},
+            "area": {"S": "Basic Sciences with IT-Mathematics Major"},
+            "studyType": {"S": "Bachelor"},
+            "startDate": {"S": "2007-08-27"},
+            "endDate": {"S": "2011-04-30"},
+            "score": {"S": "Upper Second-Class Honours"},
+            "courses": {
+              "L": [
+                {"S": "Pure & Applied Mathematics"}
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Professional Experience": {
+      "L": [
+        {
+          "M": {
+            "name": {"S": "CloudmyTribe"},
+            "position": {"S": "AWS Solutions Architect - Associate"},
+            "url": {"S": "https://www.linkedin.com/company/cloudmytribe/posts/?feedView=all"},
+            "startDate": {"S": "2024-06-01"},
+            "endDate": {"S": "2024-09-30"},
+            "summary": {"S": "Building cloud projects on AWS infrstructure"},
+            "highlights": {
+              "L": [
+                {"S": "Working on AWS Solutions Architect-Associate projects"}                
+              ]
+            }
+          }
+          
+        },
+        {
+          "M": {
+            "name": {"S": "Ipsos Kenya"},
+            "position": {"S": "Research Assistant-Top 100 Mid-Sized Companies Survey"},
+            "url": {"S": "https://www.ipsos.com/en-ke"},
+            "startDate": {"S": "2018-09-01"},
+            "endDate": {"S": "2018-10-30"},
+            "summary": {"S": "Performed financial and general interviews to the Chief Finance Officers and Managing Directors/ Chief Executive Officers, respectively, of over 30 mid-sized companies in Kenya."}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Independent Electoral and Boundaries Commission (IEBC)"},
+            "position": {"S": "Deputy Presiding Officer and Presiding Officer"},
+            "url": {"S": "https://www.iebc.or.ke/"},
+            "startDate": {"S": "2017-07-31"},
+            "endDate": {"S": "2017-10-30"},
+            "summary": {"S": "Managed and oversaw all aspects of the election in the assigned polling station with 700 voters."}            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Equity Bank Kenya Ltd"},
+            "position": {"S": "Senior Relationship Officer-Account Opening"},
+            "url": {"S": "https://equitygroupholdings.com/ke/"},
+            "startDate": {"S": "2016-04-01"},
+            "endDate": {"S": "2017-03-25"},
+            "highlights": {
+              "L": [
+                {"S": "Physically and system verified over 20 accounts opened daily together with the accompanying documentations to ensure accurate data capture and 100% compliance to policies and procedures."},
+                {"S": "Sold Equitel lines to all customers who opened accounts and effectively demonstrated usage to customers to ensure all new accounts were 100% on mobile banking and at least 95% of SIM cards issued were active."},
+                {"S": "Maintained records of materials in inventory and on order. Monitored reorder points and initiated action to replenish stock. I also reconciled discrepancies in inventory and reported irregularities."}
+              ]
+            }            
+          }
+        },
+        {
+          "M": {
+            "name": {"S": "Equity Bank Kenya Ltd"},
+            "position": {"S": "Relationship Officer-Operations, Relationship Officer-Supreme Banking"},
+            "url": {"S": "https://equitygroupholdings.com/ke/"},
+            "startDate": {"S": "2011-07-25"},
+            "endDate": {"S": "2016-04-01"},
+            "highlights": {
+              "L": [
+                {"S": "Timely resolved over 20 ATM transaction desputes and cash differences on a daily basis."},
+                {"S": "Received ATM card applications from at least 30 customers daily and instantly printed the cards on verification of the customers’ identity."},
+                {"S": "Promptly opened at least 30 customer accounts daily upon receiving and confirmation of the required account opening documents."},
+                {"S": "Received and accurately deposited at least 150 customers’ cheques and funds transfer requests upon verification of the details."},
+                {"S": "Promptly Replenished ATM cash on a daily basis for 3 ATM machines including weekends and holidays, to ensure the machines were functional throughout and that no customers were stranded."}
+              ]
+            }            
+          }
+        }
+      ]
+    },    
+    "projects": {
+      "L": [
+        {
+          "M": {
+            "name": {"S": "Cloud Resume API Challenge"},
+            "startDate": {"S": "2024-07-01"},
+            "endDate": {"S": "2024-07-31"},
+            "description": {"S": "A project where you will have the opportunity to build and deploy a serverless API using different Cloud providers (of your choice), integrated with GitHub Actions for CI/CD. The primary goal? Construct an API that can serve resume data in JSON format."},            
+            "url": {"S": "https://github.com/RosemaryOjwang/Cloud-Resume-API"}
+          }
+        }
+      ]
+    }
+  }
+}
