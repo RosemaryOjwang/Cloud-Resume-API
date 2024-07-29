@@ -1,0 +1,9 @@
+name: Cloud Resume API
+on: push
+jobs: 
+  build: 
+    name: Build and Deploy
+    runs-on: ubuntu-latest    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2

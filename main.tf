@@ -13,7 +13,7 @@ access_key = var.access_key
 secret_key = var.secret_key
 }
 resource "aws_dynamodb_table" "resumeTable" {
-  name            = "resume"
+  name            = "atieno_resume"
   billing_mode    = "PROVISIONED"
   read_capacity   = 5
   write_capacity  = 5
@@ -79,7 +79,7 @@ resource "aws_lambda_function" "lambda" {
   handler           = "lambda_function.lambda_handler"
   runtime           = "python3.11"
   role              = aws_iam_role.lambda_role.arn
-  filename          = "${path.module}/../project_files/lambda_function.zip"
+  filename          = "${path.module}/lambda_function.zip"
   timeout           = 10
 }
 output "aws_lambda_function" {
