@@ -9,24 +9,26 @@ terraform {
 }
 
 provider "aws" {
-  region     = var.region        
-  access_key = var.access_key    
-  secret_key = var.secret_key    
+    region      =var.region
+    access_key  =var.access_key
+    secret_key  =var.secret_key
+}  
+
+#Create a dynamodb table
+resource "aws_dynamodb_table" "resume_table" {
+    name = "atieno_resume"
+    billing_mode = "PROVISIONED"
+    read_capacity = 5
+    write_capacity = 5
+
+    attribute {
+        name = "id"
+        type = "S"
+    }
+
+    hash_key = "id"
 }
 
-resource "aws_dynamodb_table" "resumeTable" {
-  name            = "atieno_resume"
-  billing_mode    = "PROVISIONED"
-  read_capacity   = 5
-  write_capacity  = 5
-
-  attribute {
-    name = "id"
-    type = "S"
-  }
-
-  hash_key = "id"
-}
 # Create an IAM Role for Lambda Execution
 resource "aws_iam_role" "lambda_role" {
   name               = "lambdaExecutionRole"
@@ -89,7 +91,7 @@ output "aws_lambda_function" {
 }
 #Create a REST API in API Gateway
 resource "aws_api_gateway_rest_api" "api" {
-  name          = "resume_api"
+  name          = "api"
   description   = "Cloud resume API Challenge"
 
   endpoint_configuration {
@@ -139,17 +141,8 @@ resource "aws_api_gateway_deployment" "api_gateway_deployment" {
 }
 # Define a stage for the API Gateway
 resource "aws_api_gateway_stage" "stage" {
-  stage_name = "dev-stage"
+  stage_name = "dev"
   deployment_id = aws_api_gateway_deployment.api_gateway_deployment.id 
   rest_api_id = aws_api_gateway_rest_api.api.id
-}
-
-
-
-
-
-
-output "aws_api_gateway" {
-  value = aws_api_gateway_rest_api.api.name
 }
 
