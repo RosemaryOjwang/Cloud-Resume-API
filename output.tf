@@ -1,4 +1,3 @@
-output "aws_dynamodb_table" {
-  value = aws_dynamodb_table.resumeTable.name
-  
+output "api_endpoint" {
+  value = "${aws_api_gateway_stage.api_gateway_stage.invoke_url}/"
 }
