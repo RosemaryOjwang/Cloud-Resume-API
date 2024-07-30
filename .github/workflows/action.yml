@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
+      - name: Upload JSON Data to DynamoDB
+        run: |
+          aws dynamodb put-item \
+            --table-name atieno_resume \
+            --item file://resume.json \
+            --region ${{ secrets.AWS_REGION }}
