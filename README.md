@@ -26,14 +26,14 @@ This is a project where a serverless Resume API is built and deployed using AWS 
 ## Set Up Procedure
 
 ### Step 1
-Create a new directory for your Cloud Resume API project and navigate into the directory.
+Create a new folder for your Cloud Resume API project and navigate into the folder using the commands below.
 ```
 mkdir Cloud-Resume-API
 cd Cloud-Resume-API
 ```
 
 ### Step 2
-Create the terraform configuration files.
+Create the terraform configuration files using the following command.
 ```
 touch main.tf variable.tf output.tf lambda_function.py
 ```
@@ -42,7 +42,7 @@ touch main.tf variable.tf output.tf lambda_function.py
 Configure AWS credentials in your project, and define DynamoDB table, API Gateway and Lambda function in main.tf. 
 
 ### Step 4
-Write the Lambda function code in lambda_function.py file (in python programming languag) and package the code into a ZIP file.
+Write the Lambda function code in lambda_function.py file (in python programming language) and package the code into a ZIP file.
 
 - Packaging the lambda function code into a ZIP file ensures that all necessary code and libraries are included. This makes it portable and allows it to run in AWS environment as intended. 
 
