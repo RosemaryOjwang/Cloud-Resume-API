@@ -2,19 +2,19 @@
 _**by [Richab Kumar](https://github.com/rishabkumar7/cloud-resume-api) and [Rex Tech](https://x.com/REXTECH_/status/1810292176410308726)**_
 
 ## Overview
-This is a project where a serverless Resume API is built and deployed using AWS resources. Here, an AWS Lambda function fetches resume data from an Amazon DynamoDB table, and returns it in JSON format. GitHub Actions is also integrated to automatically deploy changes to the AWS Lambda function on every push to your repository. 
+This is a project where a serverless Resume API is built and deployed on AWS resources using terraform. Here, an AWS Lambda function fetches resume data from an Amazon DynamoDB table, and returns it in JSON format. GitHub Actions is also integrated to automatically deploy changes to the AWS Lambda function on every push to the repository. 
 
 ## Technologies
 - Amazon DynamoDB: 
-    - To store the resume data in JSON format, enabling quick and efficient retrieval by our Lambda function.
+    - DynamoDB stores the resume data in JSON format, enabling quick and efficient retrieval by the Lambda function.
 - Amazon API Gateway: 
-    - To provide the RESTful API endpoint that exposes our Lambda function to the internet. It handles all requests and responses to ensure our API is accessible and scalable.
+    - Amazon API Gateway provides the RESTful API endpoint that exposes the Lambda function to the internet. It handles all requests and responses to ensure the API is accessible and scalable.
 - AWS Lambda: 
-    - To run the code to fetch and return resume data from DynamoDB in JSON format.
+    - AWS Lambda function runs the code to fetch and return resume data from DynamoDB in JSON format.
 - Terraform: 
-    - To automate the creation and management of AWS resources- AWS Lambda, Amazon API Gateway and Amazon DynamoDB.
+    - Terraform automates the creation and management of the AWS resources- AWS Lambda, Amazon API Gateway and Amazon DynamoDB.
 - GitHub Actions: 
-    - To automate the deployment process, triggering workflows that deploy changes to our Lambda function whenever changes are pushed to the repository. 
+    - GitHub Actions automates the deployment process, triggering workflows that deploy changes to the Lambda function whenever changes are pushed to the repository. 
 
 ## Architecture Diagram
 ![Architecture Diagram](images/architecturediagram.png)
