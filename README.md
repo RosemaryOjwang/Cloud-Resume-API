@@ -17,10 +17,10 @@ This is a project where a serverless Resume API is built and deployed using AWS 
     - To automate the deployment process, triggering workflows that deploy changes to our Lambda function whenever changes are pushed to the repository. 
 
 ## Architecture Diagram
-![Architecture Diagram](image.png)
+![Architecture Diagram](images/architecturediagram.png)
 
 ## Prerequisites
-1. Install Terraform on your local machine. Click [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) for a step by step guide on how to intall terraform.
+1. Install Terraform on your local machine. Click [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) for a step by step guide on how to install terraform.
 2. Create a GitHub repository for the project.
 
 ## Set Up Procedure
@@ -54,7 +54,7 @@ terraform plan
 terraform apply
 ```
 The output should look like this after you run the las command:
-![deploymentoutput](image-2.png)
+![deploymentoutput](images/deploymentoutput.png)
 
 ### Step 6
 Push the project's code to your GitHub repository.
@@ -73,19 +73,47 @@ cd workflows
 ```
 3. Now create a file action.yml inside workflows folder.
 The path should be: .github/workflows/action.yml
-4. 
+4. Copy and paste the following code into action.yml.
+```
+name: Cloud Resume API
+on: push
+jobs: 
+  build: 
+    name: Build and Deploy
+    runs-on: ubuntu-latest 
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}   
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - name: Upload JSON Data to DynamoDB
+        run: |
+          aws dynamodb put-item \
+            --table-name your_dynamodb_table_name \
+            --item file://resume.json \
+            --region ${{ secrets.AWS_REGION }}
+```
+NB: Replace 'your_dynamodb_table_name' with the name of your dynamodb table.
+5. Configure GitHub secrets in your GitHub repository.
+- Go to **Settings** > **Secrets and variables** > **Actions**.
+- Add the following secrets:
+AWS_ACCESS_KEY_ID: Your AWS Access Key ID.
+AWS_SECRET_ACCESS_KEY: Your AWS Secret Access Key.
+AWS_REGION: Your AWS Region. 
+- Push the changes to GitHub.
+6. Verify that the workflow runs and successfully deploys the project by going to the **Actions** tab in your GitHub repository.
+![successfuldeployment](images/successfuldeployment.png)
+_The green ticks are an indication of successful deployment._
 
-
-
-
-
-
-## Test
+## API Endpoint
+Use the following endpoint to interact with the API.
 ```
 https://d3viw2dbta.execute-api.us-east-1.amazonaws.com/dev/
 
 ```
-![resumedata](image-1.png)
+![resumedata](images/resumedata.png)
 
 ## License
 [MIT](https://opensource.org/license/mit)
