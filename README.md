@@ -26,7 +26,7 @@ This is a project where a serverless Resume API is built and deployed on AWS res
 ## Set Up Procedure
 
 ### Step 1
-Create a new folder for your Cloud Resume API project and navigate into the folder using the commands below.
+Create a new folder for your Cloud Resume API project and navigate to the folder using the commands below.
 ```
 mkdir Cloud-Resume-API
 cd Cloud-Resume-API
@@ -53,7 +53,7 @@ terraform init
 terraform plan
 terraform apply
 ```
-The output should look like this after you run the las command:
+The output should look like this after you run the last command:
 ![deploymentoutput](images/deploymentoutput.png)
 
 ### Step 6
@@ -61,12 +61,12 @@ Push the project's code to your GitHub repository.
 
 ### Step 7
 Set up GitHub Actions.
-1. Create a folder .github inside the project directory and navigate into it.
+1. Create a folder .github inside the project folder and navigate to it.
 ```
 mkdir .github
 cd .github
 ```
-2. Create another folder inside the .github folder, name it workflows and navigate into it.
+2. Create another folder inside the .github folder, name it workflows and navigate to it.
 ```
 mkdir workflows
 cd workflows
