@@ -21,8 +21,9 @@ This is a project where a serverless Resume API is built and deployed using AWS 
 
 ## Prerequisites
 1. Install Terraform on your local machine. Click [here](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) for a step by step guide on how to intall terraform.
+2. Create a GitHub repository for the project.
 
-## Set-Up Procedure
+## Set Up Procedure
 
 ### Step 1
 Create a new directory for your Cloud Resume API project and navigate into the directory.
@@ -42,7 +43,8 @@ Configure AWS credentials in your project, and define DynamoDB table, API Gatewa
 
 ### Step 4
 Write the Lambda function code in lambda_function.py file (in python programming languag) and package the code into a ZIP file.
-    - Packaging the lambda function code into a ZIP file ensures that all necessary code and libraries are included. This makes it portable and allows it to run in AWS environment as intended. 
+
+- Packaging the lambda function code into a ZIP file ensures that all necessary code and libraries are included. This makes it portable and allows it to run in AWS environment as intended. 
 
 ### Step 5
 Initialize and Deploy the project using the following commands in your IDE terminal:
@@ -55,7 +57,23 @@ The output should look like this after you run the las command:
 ![deploymentoutput](image-2.png)
 
 ### Step 6
-Set-up GitHub Actions.
+Push the project's code to your GitHub repository.
+
+### Step 7
+Set up GitHub Actions.
+1. Create a folder .github inside the project directory and navigate into it.
+```
+mkdir .github
+cd .github
+```
+2. Create another folder inside the .github folder, name it workflows and navigate into it.
+```
+mkdir workflows
+cd workflows
+```
+3. Now create a file action.yml inside workflows folder.
+The path should be: .github/workflows/action.yml
+4. 
 
 
 
