@@ -45,10 +45,18 @@ Write the Lambda function code in lambda_function.py file (in python programming
     - Packaging the lambda function code into a ZIP file ensures that all necessary code and libraries are included. This makes it portable and allows it to run in AWS environment as intended. 
 
 ### Step 5
-Initialize and Deploy the project using the following command in your IDE terminal:
+Initialize and Deploy the project using the following commands in your IDE terminal:
 ```
 terraform init
+terraform plan
+terraform apply
 ```
+The output should look like this after you run the las command:
+![deploymentoutput](image-2.png)
+
+### Step 6
+Set-up GitHub Actions.
+
 
 
 
