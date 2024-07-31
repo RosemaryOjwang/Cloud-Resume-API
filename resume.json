@@ -6,7 +6,7 @@
         "name": {"S": "Rosemary Ojwang"},
         "label": {"S": "Cloud Practitioner"},
         "image": {"S": ""},
-        "email": {"S": "rosemaryojwang26@gmail.com"},
+        "email": {"S": "rosemary@gmail.com"},
         "phone": {"S": "+27 700305569"},
         "objective statement": {"S": "Dependable and self-motivated professional with over five years experience in high-pressure office environment offering banking services. Seeking to start a career in cloud computing to work alongside a diverse team to design and implement comprehensive cloud solutions that align with business needs, considering scalability, security and performance. Analytical thinker and problem solver with proven ability to evaluate challenges and make decisions."},
         "location": {

@@ -1,13 +1,19 @@
-# Cloud Resume API Challenge
+# [Cloud Resume API Challenge](https://cloudresumeapi.dev/)
+_**by [Richab Kumar](https://github.com/rishabkumar7/cloud-resume-api) and [Rex Tech](https://x.com/REXTECH_/status/1810292176410308726)**_
 
-## Introduction
-This is project where a serverless API that serves resume data in JSON format is built and deployed using Terraform on AWS, integrated with GitHub Actions for CI/CD.
-
-## Description
-An AWS Lambda function fetches resume data stored in an Amazon DynamoDB table and return it in JSON format. GitHub Actions and Terraform cloud are also integrated to automatically deploy updates to the Cloud Serverless project, whenever they are pushed to the GitHub repository.
+## Overview
+This is a project where a serverless Resume API is built and deployed using AWS resources. Here, an AWS Lambda function fetches resume data from an Amazon DynamoDB table, and returns it in JSON format. GitHub Actions is also integrated to auto-deploy changes to the Cloud serverless function, whenever they are pushed to the repository. 
 
 ## Architecture Diagram
 ![Architecture Diagram](image.png)
+
+## Technologies
+- Amazon DynamoDB
+- Amazon API Gateway
+- AWS Lambda
+- Terraform
+- GitHub Actions 
+
 
 ## Prerequisites
 1. Install Terraform on your local machine.
@@ -25,3 +31,14 @@ $ terraform apply
 $ terraform destroy
 ```
 
+## Test
+```
+https://d3viw2dbta.execute-api.us-east-1.amazonaws.com/dev/
+
+```
+![resumedata](image-1.png)
+
+## License
+[MIT](https://opensource.org/license/mit)
+
+_Copyright (c) 2023 **Rosemary Ojwang**_
